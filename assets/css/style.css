@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html,
+body{
+    width: 100%;
+    height: 100%;
+}
+.img-rounded{
+    border-radius: 100%;
+}
+
+header .navbar-collapse{
+    flex-grow: 0;
+}
+
+/**
+hightlight section
+*/
+.hightlight-section {
+    background-image: url('../images/cta-bg-image.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+    color: white;
+    overflow: hidden;
+    padding: 100px 0px;
+}
+
+.hightlight-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+.hightlight-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/**
+Footer
+*/
+.footer-nav{
+    display: inline-block;
+    margin: 0;
+}
+.footer-nav a{
+    text-decoration: none;
+    color: #000000;;
+}
+.social-links{
+    display: inline-flex;
+    margin: 0;
+}
+.social-links a{
+    text-decoration: none;
+    color: #000000;
+    margin-right: 10px;
+}
+.social-links i{
+    font-size: 16px;
+}
